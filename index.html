@@ -10,7 +10,7 @@
     /* Background and base styles */
     body {
       font-family: Arial, sans-serif;
-      background: url('web background.jpg') no-repeat center center fixed;
+      background: url('web-background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
@@ -18,30 +18,10 @@
       padding: 0;
     }
 
-    /* Glow animation for title */
-    @keyframes glow {
-      0% { text-shadow: 0 0 5px #00f0ff; }
-      50% { text-shadow: 0 0 20px #ff00ff; }
-      100% { text-shadow: 0 0 5px #00f0ff; }
-    }
-
     h1 {
       padding: 20px 0;
       font-size: 3em;
       letter-spacing: 2px;
-      animation: glow 2s infinite;
-    }
-
-    /* Slide-up animation for product cards */
-    @keyframes slideUp {
-      from {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
     }
 
     .products-container {
@@ -57,7 +37,6 @@
       border-radius: 10px;
       width: 300px;
       padding: 20px;
-      animation: slideUp 1s ease-out;
     }
 
     .product img {
@@ -67,12 +46,6 @@
 
     .product h2 {
       margin: 15px 0;
-    }
-
-    /* Bounce animation for Buy buttons */
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
     }
 
     .buy-btn {
@@ -89,7 +62,6 @@
     .buy-btn:hover {
       background: #ff00ff;
       color: white;
-      animation: bounce 0.4s;
     }
   </style>
 </head>
@@ -113,4 +85,3 @@
   </div>
 </body>
 </html>
-
